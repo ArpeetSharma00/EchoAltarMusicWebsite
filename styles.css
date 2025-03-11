@@ -20,7 +20,7 @@ body {
 
 .container {
     position: relative;
-    top: 20%;
+    top: 10%;
     z-index: 2;
 }
 
@@ -42,12 +42,45 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Tracklist Styling */
+.tracklist {
+    margin: 20px 0;
+}
+
+.tracklist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tracklist li {
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tracklist li:hover {
+    color: #b19cd9;
+    text-shadow: 0 0 10px #b19cd9;
+}
+
+/* Music Player */
 .music-player audio {
     width: 60%;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     backdrop-filter: blur(5px);
     padding: 10px;
+}
+
+/* Visualizer */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -2;
 }
 
 /* Background Animation */
@@ -66,6 +99,5 @@ body::before {
     background: url('https://source.unsplash.com/1600x900/?galaxy,stars') no-repeat center center/cover;
     opacity: 0.3;
     animation: nebula 20s infinite alternate linear;
-    z-index: -2;
+    z-index: -3;
 }
-
