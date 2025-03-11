@@ -11,13 +11,25 @@
     <div class="container">
         <h1>EchoAltar</h1>
         <p class="tagline">Where echoes of the soul become melody</p>
-        <div class="music-player">
-            <audio id="audio" controls>
-                <source src="your-music-file.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+
+        <!-- Tracklist -->
+        <div class="tracklist">
+            <ul id="track-list">
+                <li data-src="song1.mp3">🌠 Celestial Drift</li>
+                <li data-src="song2.mp3">🌊 Echoes of the Deep</li>
+                <li data-src="song3.mp3">🌌 Nebula's Lullaby</li>
+            </ul>
         </div>
+
+        <!-- Music Player -->
+        <div class="music-player">
+            <audio id="audio" controls></audio>
+        </div>
+
+        <!-- Visualizer -->
+        <canvas id="visualizer"></canvas>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
