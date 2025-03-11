@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="overlay"></div>
+    <canvas id="visualizer"></canvas>
     <div class="container">
         <h1>EchoAltar</h1>
         <p class="tagline">Where echoes of the soul become melody</p>
@@ -15,9 +16,9 @@
         <!-- Tracklist -->
         <div class="tracklist">
             <ul id="track-list">
-                <li data-src="C:\Users\SSD\Music\music\Hero - Charlie Puth.mp3">🌠 Hero By Charlie Puth </li>
-                <li data-src="song2.mp3">🌊 Echoes of the Deep</li>
-                <li data-src="song3.mp3">🌌 Nebula's Lullaby</li>
+                <li data-src="song1.mp3" data-lyrics="lyrics1.txt">🌠 Celestial Drift</li>
+                <li data-src="song2.mp3" data-lyrics="lyrics2.txt">🌊 Echoes of the Deep</li>
+                <li data-src="song3.mp3" data-lyrics="lyrics3.txt">🌌 Nebula's Lullaby</li>
             </ul>
         </div>
 
@@ -26,8 +27,10 @@
             <audio id="audio" controls></audio>
         </div>
 
-        <!-- Visualizer -->
-        <canvas id="visualizer"></canvas>
+        <!-- Lyrics Display -->
+        <div class="lyrics-container">
+            <pre id="lyrics">Select a song to see the lyrics...</pre>
+        </div>
     </div>
 
     <script src="script.js"></script>
